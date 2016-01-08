@@ -1,0 +1,23 @@
+{
+  "name": "baiji-util",
+  "version": "1.0.0",
+  "description": "Baiji utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baijijs/util.git"
+  },
+  "keywords": [
+    "baiji",
+    "util"
+  ],
+  "author": "lyfeyaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baijijs/util/issues"
+  },
+  "homepage": "https://github.com/baijijs/util#readme"
+}
