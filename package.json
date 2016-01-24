@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/baijijs/meld#readme",
   "dependencies": {
-    "baiji-entity": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",
