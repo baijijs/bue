@@ -1,6 +1,8 @@
-Baiji Meld
-============
+Meld
+====
+[![Build Status](https://travis-ci.org/baijijs/meld.svg?branch=master)](https://travis-ci.org/baijijs/meld)
 
+Lead Maintainer: [Oliver Wang](https://github.com/ole3021)
 
 Node utilities shared amongst the extended baiji universe
 
