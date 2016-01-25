@@ -46,11 +46,6 @@ All the functions used in Meld is based on lodash(v4.0.0-pre), some of them have
   ```
     meld.isDate(value)
   ```
-- _isEntity_  
-  Check if `value` is calssified as `Entity` object.
-  ```
-    meld.isEntity(value)
-  ```
 - _isEmpty_  
   Checks if `value` is empty. A value is considered empty unless it's an `arguments` object, array, string, or jQuery-like collection with a length greater than `0` or an object with own enumerable properties.
   ```
