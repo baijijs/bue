@@ -34,7 +34,7 @@ describe ('Language', function() {
 
   describe('#isDate(value)', function() {
     it('should return if `value` is classified as a `Date` object', function() {
-      expect(meld.isDate(new Date)).to.equal(true);
+      expect(meld.isDate(new Date())).to.equal(true);
       expect(meld.isDate('Mon April 23 2012')).to.equal(false);
     });
   });
@@ -85,10 +85,16 @@ describe ('Language', function() {
 
   describe('#isNull(value)', function() {
     it('should return if `value` is `null`', function() {
-      expect(meld.isNil(null)).to.equal(true);
-      expect(meld.isNumber(Number.MIN_VALUE)).to.equal(true);
-      expect(meld.isNumber(Infinity)).to.equal(true);
-      expect(meld.isNumber('3')).to.equal(false);
+      expect(meld.isNull(null)).to.equal(true);
+      expect(meld.isNull(undefined)).to.equal(false);
+    });
+  });
+
+  describe('#isNullOrUndefined(value)', function() {
+    it('should return if `value` is `null` or `undefined`', function() {
+      expect(meld.isNullOrUndefined(null)).to.equal(true);
+      expect(meld.isNullOrUndefined(undefined)).to.equal(true);
+      expect(meld.isNullOrUndefined(NaN)).to.equal(false);
     });
   });
 
@@ -114,7 +120,7 @@ describe ('Language', function() {
     }
 
     it('should return if `value` is a plain object, that is, an object created by the `Object` constructor or one with a `[[Prototype]]` of `null`', function() {
-      expect(meld.isPlainObject(new Foo)).to.equal(false);
+      expect(meld.isPlainObject(new Foo())).to.equal(false);
       expect(meld.isPlainObject([1, 2, 3])).to.equal(false);
       expect(meld.isPlainObject({ 'x': 0, 'y': 0 })).to.equal(true);
       expect(meld.isPlainObject(Object.create(null))).to.equal(true);
