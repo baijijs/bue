@@ -179,6 +179,11 @@ All the functions used in Meld is based on lodash(v4.0.0-pre), some of them have
   ```
     meld.padRight([string=''], [length=0], [chars=' '])
   ```
+- escapeRegExp
+  Escape RegExp special characters.
+  ```
+    meld.escapeRegExp([string=''])
+  ```
 
 ### Collection Functions
   > `meld.iteratee`: a function that a invokes `func` with the arguments of the created function.

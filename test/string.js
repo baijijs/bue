@@ -58,4 +58,10 @@ describe ('String', function() {
     });
   });
 
+  describe('#escapeRegExp(string)', function() {
+    it('should escape regexp special characters from string', function() {
+      expect(meld.escapeRegExp('\\ ^ $ * + ? . ( ) | { } [ ]')).to.equal('\\\\ \\^ \\$ \\* \\+ \\? \\. \\( \\) \\| \\{ \\} \\[ \\]');
+    });
+  });
+
 });

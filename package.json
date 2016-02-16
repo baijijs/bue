@@ -1,6 +1,6 @@
 {
   "name": "baiji-meld",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Baiji meld(Utils tools)",
   "main": "./lib/index.js",
   "scripts": {
