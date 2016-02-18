@@ -105,6 +105,16 @@ describe ('Language', function() {
     });
   });
 
+  describe('#isInteger(value)', function() {
+    it('should return true for integer values', function() {
+      expect(meld.isInteger(3)).to.equal(true);
+      expect(meld.isInteger('3')).to.equal(false);
+      expect(meld.isInteger(NaN)).to.equal(false);
+      expect(meld.isInteger(null)).to.equal(false);
+      expect(meld.isInteger(3.1)).to.equal(false);
+    });
+  });
+
   describe('#isObject(value)', function() {
     it('should return  if `value` is the language type of `Object`.(arrays, functions, objects, regexes, `new Number(0)`, and `new String()', function() {
       expect(meld.isObject({})).to.equal(true);

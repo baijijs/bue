@@ -83,6 +83,11 @@ All the functions used in Meld is based on lodash(v4.0.0-pre), some of them have
   ```
     meld.isNumber(value)
   ```
+- isInteger
+  Checks if `value` is an integer.
+  ```
+    meld.isInteger(value)
+  ```
 - isObject  
   Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.
   ```
