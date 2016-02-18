@@ -1,14 +1,14 @@
 {
-  "name": "baiji-meld",
+  "name": "bue",
   "version": "1.0.3",
-  "description": "Baiji meld(Utils tools)",
+  "description": "Bue for Baiji(Utils tools)",
   "main": "./lib/index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha -R nyan"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/baijijs/meld.git"
+    "url": "git+https://github.com/baijijs/bue.git"
   },
   "keywords": [
     "baiji",
@@ -17,9 +17,9 @@
   "author": "lyfeyaj",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/baijijs/meld/issues"
+    "url": "https://github.com/baijijs/bue/issues"
   },
-  "homepage": "https://github.com/baijijs/meld#readme",
+  "homepage": "https://github.com/baijijs/bue#readme",
   "dependencies": {
   },
   "devDependencies": {
