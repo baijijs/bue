@@ -73,6 +73,11 @@ All the functions used in Meld is based on lodash(v4.0.0-pre), some of them have
   ```
     meld.isNull(value)
   ```
+- isNullOrUndefined
+  Checks if `value` is `null` or `undefined`.
+  ```
+    meld.isNullOrUndefined(value)
+  ```
 - isNumber  
   Checks if `value` is classified as a `Number` primitive or object.
   ```
@@ -215,6 +220,11 @@ All the functions used in Meld is based on lodash(v4.0.0-pre), some of them have
   ```
     meld.min(array)
   ```
+
+### Assertion Testing
+
+- assert
+  The `assert` module provides a simple set of assertion tests that can be used to test invariants, based on nodejs core module `assert`
 
 # License
 
