@@ -17,7 +17,7 @@ npm install bue
 ## Usage
 
 ```javascript
-var biu = require('bue');
+var bue = require('bue');
 
 bue.isArray([1,2,3]);
 // => true
@@ -32,6 +32,11 @@ All the functions used in Bue is based on lodash(v4.0.0-pre), some of them have 
   Creates a shallow clone [structured clone algorithm](https://mdn.io/Structured_clone_algorithm) of `value`.
   ```
     bue.clone(value)
+  ```
+- eq
+  Compare two values(arrays, booleans, Date objects, numbers) if they ware equivalent.
+  ```
+    bue.eq(object, other);
   ```
 - isArray  
   Checks if `value` is classified as an `Array` object.
@@ -198,6 +203,11 @@ All the functions used in Bue is based on lodash(v4.0.0-pre), some of them have 
 ### Collection Functions
   > `bue.iteratee`: a function that a invokes `func` with the arguments of the created function.
 
+- contains
+  Check if `target` is in `collection`
+  ```
+    bue.contains(collection, value, [fromIndex=0])
+  ```
 - each  
   Iterates over elements of `collection` invoking `iteratee` for each element. The iteratee is invoked with three arguments: (value, index|key, collection). Iteratee functions may exit iteration early by explicitly returning `false`.
   ```
