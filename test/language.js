@@ -17,6 +17,16 @@ describe ('Language', function() {
     });
   });
 
+  describe('#eq(object, target)', function() {
+    var object = { 'user': 'fred' };
+    var other = { 'user': 'fred' };
+
+    it('Returns true if the values are equivalent', function() {
+      expect(bue.eq(object, other)).to.equal(true);
+      expect(object === other).to.equal(false);
+    });
+  });
+
   describe('#isArray(value)', function() {
     it('should return if `value` is classified as an `Array` object', function() {
       expect(bue.isArray('abc')).to.equal(false);

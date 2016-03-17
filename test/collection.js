@@ -9,7 +9,16 @@ describe ('Collection', function() {
 
   beforeEach(function() {
     iterator = 0;
-  })
+  });
+
+  describe('#contains(collection, value)', function() {
+    it('Returns true if the equivalent values found', function() {
+      expect(bue.contains([1, 2, 3], 1)).to.equal(true);
+      expect(bue.contains([1, 2, 3], 1, 2)).to.equal(false);
+      expect(bue.contains({ 'user': 'fred', 'age': 40 }, 'fred')).to.equal(true);
+      expect(bue.contains('pebbles', 'eb')).to.equal(true);
+    });
+  });
 
   describe('#each(collection)', function() {
     it('should return each element key & value', function() {
